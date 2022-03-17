@@ -1,0 +1,265 @@
+.brand__logo {
+  @include flexCenter;
+  color: $color-primary;
+  font-size: 70px;
+  border: 5px solid $color-primary;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.brand__main-name {
+  font-size: 50px;
+  font-family: $font-mitr;
+  @include textStyle;
+}
+
+.brand__sub-name {
+  @include textStyle;
+  text-align: center;
+  font-size: 20px;
+}
+
+.banner__main-heading {
+  font-size: 170px;
+  font-family: $font-dancingscript;
+  font-weight: 300;
+  color: $color-primary;
+  @media (max-width: 995px) {
+    font-size: 100px;
+  }
+}
+
+.banner__sub-heading {
+  font-size: 30px;
+  font-family: $font-nunito;
+  margin-bottom: 60px;
+  @media (max-width: 995px) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.banner__btn-reservation {
+  font-size: 18px;
+  padding: 22px 32px;
+  border-radius: 35px;
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $color-light;
+  letter-spacing: 1px;
+  border: none;
+  text-transform: uppercase;
+  transition: linear 0s;
+
+  @media (max-width: 995px) {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 15px 25px;
+  }
+
+  @media (max-width: 522px) {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
+
+.banner__btn-reservation:hover {
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+}
+
+.about__info__main-heading {
+  font-size: 100px;
+  font-family: $font-dancingscript;
+  font-weight: 300;
+  color: $color-primary;
+
+  @media (max-width: 1442px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 995px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 522px) {
+    font-size: 2.5rem;
+  }
+}
+
+.about__info__sub-heading {
+  font-size: 30px;
+  font-family: $font-nunito;
+  margin-bottom: 60px;
+
+  @media (max-width: 1442px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 995px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
+.card {
+  width: 33.333%;
+  height: 20vw;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 522px) {
+    height: 22vw;
+  }
+
+  &:hover .card-overlay {
+    top: 0;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-primary, 0.6);
+    @include flexCenter;
+    flex-direction: column;
+    transition: linear 0.6s;
+
+    &__heading {
+      font-size: 40px;
+      font-family: $font-monsterat;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      @media (max-width: 995px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 522px) {
+        font-size: 20px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 30px;
+      font-family: $font-monsterat;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      @media (max-width: 995px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 522px) {
+        font-size: 15px;
+      }
+    }
+
+    .btn-overlay {
+      outline: none;
+      border: none;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 15px;
+      font-family: $font-nunito;
+      font-weight: 600;
+      color: $color-primary;
+
+      @media (max-width: 768px) {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.footer-header__logo {
+  @include flexCenter;
+  color: $color-primary;
+  font-size: 70px;
+  border: 5px solid $color-primary;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer-header__main-name {
+  font-size: 50px;
+  font-family: $font-mitr;
+  @include textStyle;
+  color: $color-light;
+}
+
+.footer-header__sub-name {
+  @include textStyle;
+  text-align: center;
+  font-size: 20px;
+  color: $color-light;
+}
+
+.hambuger-menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  z-index: 300;
+
+  .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &-line {
+      background-color: $color-primary;
+      height: 4px;
+    }
+  }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
+}
+
+.checkbox:checked ~ .hambuger-menu .menu {
+  transform: rotateZ(90deg);
+}

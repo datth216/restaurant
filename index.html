@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Use font Montserrat, Nunito, Mitr, Dancing Script -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mitr:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&family=Nunito:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Simple Restaurant</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <input type="checkbox" id="check" class="checkbox" hidden />
+      <div class="hambuger-menu">
+        <label for="check" class="menu">
+          <div class="menu-line menu-line-1"></div>
+          <div class="menu-line menu-line-2"></div>
+          <div class="menu-line menu-line-3"></div>
+        </label>
+      </div>
+
+      <div class="navbar-navigation">
+        <div class="navbar-navigation-left">
+          <img src="./images/navbar-1.jpg" alt="" class="left-img left-img-1" />
+          <img src="./images/navbar-2.jpg" alt="" class="left-img left-img-2" />
+          <img src="./images/navbar-3.jpg" alt="" class="left-img left-img-3" />
+        </div>
+        <div class="navbar-navigation-right">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">About Us</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">Our Menu</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <a href="#" class="brand__logo"><i class="fas fa-utensils"></i></a>
+        <div>
+          <h1 class="brand__main-name">Simple</h1>
+          <p class="brand__sub-name">Restaurant</p>
+        </div>
+      </div>
+
+      <div class="banner">
+        <h1 class="banner__main-heading">Welcome</h1>
+        <h3 class="banner__sub-heading">To My Restaurant</h3>
+        <button type="button" class="banner__btn-reservation">Our Menu</button>
+      </div>
+    </header>
+
+    <!-- About Us -->
+    <section class="about">
+      <div class="about__image">
+        <img src="./images/about.jpg" alt="" />
+      </div>
+
+      <div class="about__info">
+        <h1 class="about__info__main-heading">About Us</h1>
+        <h3 class="about__info__sub-heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          mollitia consectetur sint enim dolorum asperiores. Quis expedita sed
+          et provident placeat dolorum quaerat labore officiis consequatur quod,
+          perferendis deserunt obcaecati!
+        </h3>
+        <div class="about__stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+        <p class="about__description">
+          Making a reservation at Délicisous restaurant is easy and takes just a
+          couple of minutes.
+        </p>
+        <div class="about__stars">
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+          <i class="fas fa-star-of-life star"></i>
+        </div>
+        <button type="button" class="banner__btn-reservation">Read More</button>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay__heading">Sushi</h1>
+            <p class="card-overlay__paragraph">Price: $30.00</p>
+            <button type="button" class="btn-overlay">Order Now</button>
+          </div>
+          <img src="./images/gallery-1.jpg" alt="" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay__heading">Bread</h1>
+            <p class="card-overlay__paragraph">Price: $30.00</p>
+            <button type="button" class="btn-overlay">Order Now</button>
+          </div>
+          <img src="./images/gallery-2.jpg" alt="" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay__heading">Seafood</h1>
+            <p class="card-overlay__paragraph">Price: $30.00</p>
+            <button type="button" class="btn-overlay">Order Now</button>
+          </div>
+          <img src="./images/gallery-3.jpg" alt="" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay__heading">Beef</h1>
+            <p class="card-overlay__paragraph">Price: $30.00</p>
+            <button type="button" class="btn-overlay">Order Now</button>
+          </div>
+          <img src="./images/gallery-4.jpg" alt="" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay__heading">Chicken</h1>
+            <p class="card-overlay__paragraph">Price: $30.00</p>
+            <button type="button" class="btn-overlay">Order Now</button>
+          </div>
+          <img src="./images/gallery-5.jpg" alt="" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay__heading">Salad</h1>
+            <p class="card-overlay__paragraph">Price: $30.00</p>
+            <button type="button" class="btn-overlay">Order Now</button>
+          </div>
+          <img src="./images/gallery-6.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-header">
+        <a href="#" class="footer-header__logo"
+          ><i class="fas fa-utensils"></i
+        ></a>
+        <div>
+          <h1 class="footer-header__main-name">Simple</h1>
+          <p class="footer-header__sub-name">Restaurant</p>
+        </div>
+      </div>
+
+      <div class="footer-social-media">
+        <ul class="social-media">
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">
+          Copyright ©2022 All rights reserved | Made with ❤
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

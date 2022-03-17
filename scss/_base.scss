@@ -1,0 +1,35 @@
+$color-light: rgba(255, 255, 255, 0.746);
+$color-primary: #d3ab55;
+$font-monsterat: "Montserrat", sans-serif;
+$font-nunito: "Nunito", sans-serif;
+$font-mitr: "Mitr", sans-serif;
+$font-dancingscript: "Dancing Script", cursive;
+
+@mixin flexCenter {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@mixin textStyle($transform: uppercase) {
+  font-weight: 500;
+  text-transform: $transform;
+  letter-spacing: 2px;
+}
+
+@mixin center($top) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-light;
+}
